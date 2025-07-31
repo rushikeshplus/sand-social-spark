@@ -20,6 +20,8 @@ export default function Sidebar({
         {platforms.map((plat) => (
           <button
             key={plat.id}
+            className={`sidebar-btn ${selected === plat.id ? 'active' : ''}`}
+
 
             onClick={() => onSelect(plat.id)}
           >
