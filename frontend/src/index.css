@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -71,7 +71,7 @@ button:focus-visible {
   }
 }
 body {
-  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   background: #eef2f5;
   margin: 0;
 }
@@ -243,4 +243,68 @@ h1 {
   opacity: 0.6;
 }
 
+/* Layout */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: #eef2f5;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #1f2937;
+  color: #fff;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #93c5fd;
+  letter-spacing: 2px;
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  color: #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sidebar-btn:hover {
+  background: #334155;
+  color: #fff;
+}
+
+.sidebar-btn.active {
+  background: #0f172a;
+  color: #fff;
+}
+
+.sidebar-btn .label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 240px;
+  }
+  .sidebar-btn .label {
+    display: inline;
+  }
 }
