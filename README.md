@@ -1,5 +1,4 @@
 # Sand Social AI App
-
 This project includes a simple Express backend and a React frontend.
 
 ## Backend setup
