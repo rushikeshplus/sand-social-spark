@@ -53,7 +53,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const Comp = asChild ? ("span" as any) : "button";
+    const Comp: React.ElementType = asChild ? "span" : "button";
     return (
       <Comp
         ref={ref}
