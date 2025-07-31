@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -71,7 +71,7 @@ button:focus-visible {
   }
 }
 body {
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
   background: #eef2f5;
   margin: 0;
 }
@@ -244,6 +244,7 @@ h1 {
 }
 
 
+
 /* Layout */
 .app-container {
   display: flex;
@@ -330,6 +331,3 @@ h1 {
 
 .transition-smooth {
   transition: all 0.2s ease-in-out;
-
-
-}
