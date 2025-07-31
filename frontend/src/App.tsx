@@ -87,12 +87,15 @@ export default function App() {
   return (
     <div className="app-container">
       <Sidebar selected={selectedPlatform} onSelect={setSelectedPlatform} />
+
       <main className="main">
         <div className="container">
           <h1>
             <span role="img" aria-label="fb">📘</span>
             {selectedPlatform.charAt(0).toUpperCase() + selectedPlatform.slice(1)} Page Monitor
+
           </h1>
+          <p className="text-blue-200 text-center text-lg mb-8">Social Feed</p>
           {posts.length === 0 && (
             <div className="post-card">Loading posts...</div>
           )}
@@ -169,6 +172,7 @@ export default function App() {
                 ))}
               </div>
             </div>
+
           ))}
         </div>
       </main>

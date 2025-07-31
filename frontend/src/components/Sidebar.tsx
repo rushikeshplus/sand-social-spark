@@ -21,6 +21,8 @@ export default function Sidebar({
           <button
             key={plat.id}
             className={`sidebar-btn ${selected === plat.id ? 'active' : ''}`}
+
+
             onClick={() => onSelect(plat.id)}
           >
             <plat.icon size={18} />
