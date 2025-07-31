@@ -23,9 +23,9 @@ export default function Sidebar({
         {platforms.map((plat) => (
           <Button
             key={plat.id}
-            variant={selected === plat.id ? "default" : "ghost"}
+            variant="ghost"
             size="lg"
-            className={`flex items-center gap-4 px-2 ${selected === plat.id ? "bg-blue-800/80 text-white shadow-lg" : "text-blue-200 hover:bg-blue-800/60"}`}
+            className={`flex items-center gap-4 px-2 rounded-lg ${selected === plat.id ? "glass-card bg-blue-600/40 text-white shadow-elegant" : "text-blue-200 hover:bg-blue-800/60"}`}
             onClick={() => onSelect(plat.id)}
           >
             <plat.icon className="w-6 h-6" />
